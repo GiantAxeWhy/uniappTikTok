@@ -1,0 +1,28 @@
+.tab {
+    @include flex();
+    width: 100%;
+    // border-bottom: 1px #f5f5f5 solid;
+    background-color: rgba(0,0,0,0.4);
+    box-sizing: border-box;
+  
+    .tab-scroll {
+      flex: 1;
+      box-sizing: border-box;
+      height: 90rpx;
+      .tab-scroll-box {
+        @include flex(flex-start);
+        height: 90rpx;
+        box-sizing: border-box;
+        .tab-scroll-item {
+          flex-shrink: 0;
+          padding: 0 20rpx;
+          color: #333333;
+          font-size: 28rpx;
+          &.active {
+            color: $base-color;
+          }
+        }
+      }
+    }
+
+  }

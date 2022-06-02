@@ -1,0 +1,7 @@
+{
+  "name": "test_level",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
